@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+body {
+    background-image: url('../CSS/images/natural-2.jpg');
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.dropdown-menu {
+    background: #0000003c;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dropdown-menu ul {
+    display: flex;
+    list-style: none;
+    color: white;     
+    flex-wrap: wrap;
+}
+.dropdown-menu li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu ul li:nth-child(1),
+.dropdown-menu li:hover {
+    background-color: #00000081;
+    border-radius: 5px;
+}
+.sub-menu-p1 {
+    display: none;
+}
+.dropdown-menu ul li:hover .sub-menu-p1 {
+    display: block;
+    position: absolute;
+    
+    background-color:  #000000b0;
+    margin: 15px 0 0 -15px;
+}
+
+.dropdown-menu ul li:hover .sub-menu-p1 ul {
+    display: block;
+    margin: 10px;
+}
+.dropdown-menu ul li:hover .sub-menu-p1 ul li {
+    border-bottom: 1px solid white;
+    background: transparent;
+    padding: 10px;
+    width: 150px;
+}
+.sub-menu-p1 ul li:hover {
+    text-shadow: 0 0 10px white;
+    box-shadow: 0 0 2px 2px #008563 inset;
+    border: none;
+}
